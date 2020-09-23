@@ -1,0 +1,20 @@
+NOTE: you can run server with python manage.py runserver
+NOTE: you must always pass a request variable in views.py
+
+1. create a project using 'django-admin startproject {name}'
+2. create a new applet using python manage.py startapp {name}
+3. edit views.py and either render a template or return a response
+4. create a urls.py and copy the code from the main urls.py
+
+------------------------------------------------
+    from django.contrib import admin
+    from django.urls import path
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+    ]
+------------------------------------------------
+
+5. import the views.py with 'from . import views'
+6. call the function & give it a label for example ''', views.homepage, name='blogapp-homepage''
+7. using the include() in the main urls.py include the urls.py from blog

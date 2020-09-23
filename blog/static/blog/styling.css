@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.uk-container::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.rounded {
+    border-radius: 100%;
+}
+
+.blog {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.blog-card {
+    cursor: pointer;
+}
+
+.bottom {
+    margin-bottom: 5%;
+}
+
+html {
+    background-color: #fff;
+}
+
+html {
+    scrollbar-width: none;
+    overflow-y: scroll;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */
+    background: #fff;
+    color: #222;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px;
+    border: 3px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.article-title {
+    color: #444444;
+}
+
+a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.article-content {
+    white-space: pre-line;
+}
+
+.page-title {
+    font-weight: 400;
+    font-size: 40px;
+    padding: 20px 0px;
+    text-align: center;
+}

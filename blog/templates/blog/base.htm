@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/styling.css' %}"> {% if title %}
+    <title>Seenivasagam Pasupathy - {{ title }}</title>
+    {% else %}
+    <title>Seenivasagam Pasupathy</title>
+    {% endif %}
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <a class="navbar-brand" href="#"><img class="rounded" width="50" height="50" src="{% static 'blog/media/p.png' %}" alt="P"></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blogapp-homepage' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'userbase-register' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'userbase-login' %}">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="row">
+            <div class="col-md-8">
+                {% if messages %} {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+                {% endfor %} {% endif %}
+            </div>
+        </div>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+<footer style="text-align: center;font-size: 14px;margin: 50px;">
+    <strong>
+    Powered by
+    <a href="https://www.djangoproject.com/">
+        <img src="{% static 'blog/media/django_logo.png' %}" alt="django" height="25">
+    </a>
+    and
+    <a href="https://getuikit.com">
+        <img src="{% static 'blog/media/bootstrap_logo.png' %}" alt="UIKit" height="25">
+    </a>
+    <br>
+  </strong>
+</footer>
+
+</html>
