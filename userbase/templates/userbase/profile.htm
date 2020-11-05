@@ -1,5 +1,6 @@
 {% extends "blog/base.htm" %} {% block content %}
 <h1 class="page-title">
     Hello, {{ user.username }}!
+    <img src="{{ user.profile.image.url }}" alt="">
 </h1>
-{% endblock content %}
+{% endblock content %}m     
