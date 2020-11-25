@@ -15,9 +15,9 @@ This project covered a lot of areas that will help me later on in my career as a
 - Building a front-end with CSS Frameworks (Bootstrap, UIKit)
 - Understanding structure of backend websites
 ## Usage
-<strong>1.</strong> Clone the repository via [Github Desktop](x-github-client://openRepo/https://github.com/C403G/django-blog) or run the command below in [Git](https://git-scm.com/)
+<strong>1.</strong> Clone the repository via [Github Desktop](x-github-client://openRepo/https://github.com/ashwin2200/django-blog) or run the command below in [Git](https://git-scm.com/)
 ```git
-git clone https://github.com/C403G/django-blog.git
+git clone https://github.com/ashwin2200/django-blog.git
 ```
 <strong>2.</strong> Install the the required libraries via the commands below (or run the workspace.cmd file if applicable)
 ```cmd
