@@ -19,7 +19,7 @@ This project covered a lot of areas that will help me later on in my career as a
 ```git
 git clone https://github.com/ashwin2200/django-blog.git
 ```
-<strong>2.</strong> Install the the required libraries via the commands below (or run the workspace.cmd file if applicable)
+<strong>2.</strong> Install the the required libraries via the commands below.
 ```cmd
 pip install Django
 pip install PIL
